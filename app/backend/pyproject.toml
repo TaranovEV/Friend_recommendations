@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "friend-recommendation-service"
+version = "0.1.0"
+description = "Displays a list of N recommended friends and allows you to calculate the most relevant candidates for friends"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["standard"], version = "^0.115.2"}
+pyspark = "^3.5.3"
+numpy = "^2.1.2"
+pytest = "^8.3.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
